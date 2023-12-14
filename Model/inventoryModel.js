@@ -5,11 +5,7 @@ const inventorySchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    productImage: {
-        type: String,
-        default: "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=600" 
-    },
-    productDescription: {
+    description: {
         type: String,
         required: true
     },
@@ -24,7 +20,18 @@ const inventorySchema = new mongoose.Schema({
     price: {
         type: Number,
         required: true
-    }
+    },
+    image:{
+        data:Buffer,
+        contentType:String,
+    },
+    slug:{
+        type : String,
+        required:true,
+    },
+    shipping:{
+        type:Boolean,
+    },
 });
 
 const InventoryModel = mongoose.model("Inventory", inventorySchema);

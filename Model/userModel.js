@@ -19,6 +19,10 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  answer : {
+    type : String,
+    required : true,
+  },
   address: {
     type: String,
     required: true,
@@ -27,7 +31,7 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  userType: {
+  role: {
     type: String,
     enum: ["Customer", "Manager"],
     default: "Customer",
