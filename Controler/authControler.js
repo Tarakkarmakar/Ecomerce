@@ -10,15 +10,10 @@ import orderModel from '../Model/orderModel.js';
          if(!name){
             return res.send({message : 'Name is required'})
          }
-         if(!email){
-            return res.send({message : 'email is required'})
+         if(!email || !phone){
+            return res.send({message : 'email or phone is required'})
          }
-         if(!password){
-            return res.send({message : 'password is required'})
-         }
-         if(!phone){
-            return res.send({message : 'phone is required'})
-         }
+       
          if(!address){
             return res.send({message : 'address is required'})
          }

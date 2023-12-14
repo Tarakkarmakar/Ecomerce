@@ -13,8 +13,7 @@ export const createProductController = async (req, res) => {
              slug,
             description,
             price,
-
-            quantity,
+             quantity,
             shipping,
         } = req.fields;
 
