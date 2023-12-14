@@ -9,8 +9,8 @@ import {
     registerControler, 
     testController,
     updateProfileController
-    } from '../Controllers/authControler.js'
-import { isAdmin, requireSignIn } from '../Middlewares/authMiddleware.js';
+    } from '../Controler/authControler.js'
+import { isAdmin, requireSignIn } from '../Middleware/authMiddleware.js';
 
 
    //router object

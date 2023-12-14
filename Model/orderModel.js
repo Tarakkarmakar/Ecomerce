@@ -18,8 +18,4 @@ import mongoose from 'mongoose'
   },{
     timestamps : true,
   });
-const OrderModel= mongoose.model('Order', orderSchema)
-
-module.exports={
-    OrderModel
-}
+  export default mongoose.model('Order', orderSchema)

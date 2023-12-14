@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import  mongoose from "mongoose"
 
 const inventorySchema = new mongoose.Schema({
     productName: {
@@ -34,8 +34,5 @@ const inventorySchema = new mongoose.Schema({
     },
 });
 
-const InventoryModel = mongoose.model("Inventory", inventorySchema);
+export default mongoose.model("Inventory", inventorySchema);
 
-module.exports = {
-    InventoryModel
-};

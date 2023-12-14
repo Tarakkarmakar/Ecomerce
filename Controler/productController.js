@@ -1,5 +1,5 @@
 import slugify from "slugify";
-import productModel from "../Models/productModel.js";
+import productModel from "../Model/inventoryModel.js";
 import fs from "fs";
 import orderModel from "./../Model/orderModel.js";
 import dotenv from "dotenv";
