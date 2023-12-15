@@ -4,7 +4,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import morgan from 'morgan';
-import connectDB from './config/db.js';
+import connectDB from './Config/db.js';
 import authRoutes from './Route/AuthRoute.js'
 
 import productRoutes from './Route/productsRoute.js'
