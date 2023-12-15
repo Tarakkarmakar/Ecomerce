@@ -10,6 +10,7 @@ export const createProductController = async (req, res) => {
     try {
         const {
             name,
+            weight,
              slug,
             description,
             price,
@@ -127,6 +128,7 @@ export const updateProductController = async (req, res) => {
     try {
         const {
             name,
+            weight,
             slug,
             description,
             price,
