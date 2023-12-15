@@ -12,19 +12,15 @@ import {
   productListController,
   updateProductController,
 } from "../Controler/productController.js";
-import formidable from "express-formidable";
 
 const router = express.Router();
 
 //Routes
-router.post("/create-product", formidable(), createProductController);
+router.post("/create-product", createProductController);
 
 // FOR UPDATINGRoutes
 router.put(
   "/update-product/:pid",
-  // requireSignIn,
-  // isAdmin,
-  formidable(),
   updateProductController
 );
 
